@@ -1,31 +1,107 @@
+/*mobile 320px*/
 /* base */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-header {
-}
-
 body {
+  font-family: "Nunito", sans-serif;
 }
 
-p {
+h1,
+h2 {
+  text-align: center;
+}
+h1 {
+  font-size: 200%;
 }
 
-li {
+h2 {
+  font-weight: 100;
+  font-size: 110%;
 }
 
+h3 {
+  font-size: 200%;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+nav li {
+  display: inline-block;
+  margin-top: 0;
+  margin-right: 12px;
+  margin-left: 12px;
+  margin-bottom: 0;
+  text-decoration: underline;
+}
+
+hr {
+  color: rgb(180, 189, 199);
+  margin-top: 50px;
+  width: 100%;
+}
+/* layout */
+.header-nav li,
 a {
+  text-decoration: none;
 }
 
-/* layout styles */
-.page_container {
+.header-nav a:hover {
+  text-decoration: underline;
 }
 
-.header {
+.Design-career {
+  text-align: center;
 }
 
-/* block styles */
-.nav_bar {
+.Schedule-button {
+  background-color: rgb(87, 11, 150);
+  text-decoration: none;
+  color: white;
+  padding: 0.5em;
+  border-radius: 4px;
+  width: 8em;
+  text-align: center;
+  display: inline-block;
+}
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.full-name input {
+  padding: 5px;
+}
+.signup-form input {
+  margin: 5px;
+}
+.form-email,
+.form-phone {
+  width: 93%;
+  padding: 5px;
+}
+
+.submit-container_button {
+  border: solid black 1px;
+  background-color: white;
+  color: purple;
+  padding: 0.5em;
+  border-radius: 2px;
+  width: 8em;
+  display: inline-block;
+}
+
+/* block */
+.submit-container {
+  text-align: center;
+}
+
+/* desktop styles */
+@media (width: 550px) {
+  /* base */
+  /* layout */
+  /* block */
 }
