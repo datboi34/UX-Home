@@ -9,7 +9,7 @@
 body {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 70px 10% 10% 1fr 5% 25% 1fr 1fr;
+  grid-template-rows: 70px 1fr 1fr 1fr 5% 25% 10%;
 }
 
 li {
@@ -274,11 +274,16 @@ a {
   text-align: center;
 }
 /* desktop styles */
-@media (width: 550px) {
-  .quotes-section_icons {
-    width: 50%;
-    margin-left: 70px;
+@media (min-width: 550px) {
+  .quotes-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
+  .quotes-section_icons {
+    width: 70%;
+    margin-left: 20px;
+  }
+
   .design-career_video {
     width: 60%;
   }
@@ -300,12 +305,17 @@ a {
     align-items: center;
   }
   .program-section_button {
-    margin-left: 60px;
+    width: 100%;
+    margin-left: 10px;
   }
+  /* compare */
   .compare-section_button {
     margin-right: 60px;
   }
-
+  .compare-section_container {
+    gap: 0px;
+  }
+  /* meet */
   .meet-faculty {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -313,5 +323,11 @@ a {
   }
   .meet-card img {
     width: 100%;
+  }
+  /* student */
+  .student-video_p {
+    position: relative;
+    bottom: 60px;
+    right: 50px;
   }
 }
