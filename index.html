@@ -4,28 +4,31 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kenzie</title>
+    <link
+      rel="stylesheet"
+      href="//fonts.googleapis.com/css?family=Nunito"
+      type="text/css"
+    />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header class="header">
       <nav class="header-nav">
-        <ul class="header-nav_ul">
+        <ul class="header-ul">
           <li><a href="#">Admissions</a></li>
           <li><a href="#">Programs</a></li>
           <li><a href="#">Pricing</a></li>
-          <li><a class="Schedule-button" href="#">Schedule a Tour</a></li>
+          <li><a class="schedule-button" href="#">Schedule a Tour</a></li>
         </ul>
       </nav>
     </header>
-    <section class="Design-career">
-      <h1 class="Design-career_title">Design your tech career</h1>
-      <h2>
+    <section class="design-career">
+      <h1 class="design-career_h1">Design your tech career</h1>
+      <h5 class="design-career_description">
         Kenzie Academy is a two-year learning track and apprenticeship program.
-      </h2>
+      </h5>
       <iframe
-        class="Design-career_video"
-        width="560"
-        height="315"
+        class="design-career_video"
         src="https://www.youtube.com/embed/FqVHe2BGdEw"
         frameborder="0"
         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
@@ -33,94 +36,223 @@
       ></iframe>
     </section>
 
-    <hr />
-
     <section class="quotes-section">
-      <div class="quotes-section_cards">
-        <img class="quotes-section_icons" src="" alt="" />
-        <p class="quotes-section_p">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed inventore
-          iusto illo ratione pariatur est asperiores. Eius velit ducimus, nobis
-          totam, vel, quasi quo ab deserunt saepe quam rerum sequi!
-        </p>
-      </div>
-      <div class="quotes-section_cards">
-        <img class="quotes-section_icons" src="" alt="" />
-        <p class="quotes-section_p">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed inventore
-          iusto illo ratione pariatur est asperiores. Eius velit ducimus, nobis
-          totam, vel, quasi quo ab deserunt saepe quam rerum sequi!
-        </p>
+      <div class="quotes-wrapper">
+        <div class="quotes-section_cards">
+          <img
+            class="quotes-section_icons"
+            src="./icons/quotes.png"
+            alt="quote"
+          />
+          <p class="quotes-section_description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          </p>
+        </div>
+
+        <div class="quotes-section_cards">
+          <img
+            class="quotes-section_icons"
+            src="./icons/quotes.png"
+            alt="quote"
+          />
+          <p class="quotes-section_description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          </p>
+        </div>
       </div>
     </section>
     <section class="program-section">
       <div class="program-section_cards">
-        <img class="program-section_image" src="" alt="" />
-        <h4>Software Engineering</h4>
+        <img
+          class="program-section_image"
+          src="./icons/date.png"
+          alt="calendar"
+        />
+        <h4 class="program-section_title">Software Engineering</h4>
         <button class="program-section_button">Learn to Code</button>
       </div>
       <div class="program-section_cards">
-        <img class="program-section_image" src="" alt="" />
-        <h4>User Experience</h4>
+        <img
+          class="program-section_image"
+          src="./icons/date.png"
+          alt="calendar"
+        />
+        <h4 class="program-section_title">User Experience</h4>
         <button class="program-section_button">Learn to Design</button>
       </div>
       <div class="program-section_cards">
-        <img class="program-section_image" src="" alt="" />
-        <h4>Digital Marketing</h4>
+        <img
+          class="program-section_image"
+          src="./icons/date.png"
+          alt="calendar"
+        />
+        <h4 class="program-section_title">Digital Marketing</h4>
         <button class="program-section_button">Learn to Market</button>
       </div>
     </section>
     <section class="compare-section">
       <div class="compare-section_container">
-        <h3 class="compare-section_title">
+        <h4 class="compare-section_title">
           Not Sure which program is right for you?
-        </h3>
+        </h4>
         <button class="compare-section_button">Compare Programs</button>
       </div>
     </section>
     <section class="meet-section">
-      <div class="meet-section_kenzie">
-        <p class="meet-section_p">
+      <div class="meet-kenzie">
+        <h2 class="meet-header">Meet Kenzie</h2>
+        <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint pariatur
           alias soluta molestiae quae, enim laudantium, ut placeat quasi,
-          consequuntur adipisci perspiciatis corrupti qui asperiores! Nulla
-          minus dicta mollitia minima.
         </p>
-        <a class="meet-section_story" href="#">Read our story</a>
+        <a class="meet-story" href="#">Read our story</a>
       </div>
-      <div class="meet-section_card">
-        <img class="meet-section_image" src="" alt="" />
-        <h4 class="meet-section_titles">Team</h4>
-      </div>
-      <div class="meet-section_card">
-        <img class="meet-section_image" src="" alt="" />
-        <h4 class="meet-section_titles">Board</h4>
-      </div>
-      <div class="meet-section_card">
-        <img class="meet-section_image" src="" alt="" />
-        <h4 class="meet-section_titles">Mentors</h4>
-      </div>
-      <div class="meet-section_card">
-        <img class="meet-section_image" src="" alt="" />
-        <h4 class="meet-section_titles">Advisors</h4>
-      </div>
+      <div class="meet-faculty">
+        <div class="meet-card">
+          <div class="meet-icon_wrapper">
+            <img
+              class="icon-1"
+              src="./icons/profile-icon.png"
+              alt="profile icon"
+            />
+            <img
+              class="icon-2"
+              src="./icons/profile-icon.png"
+              alt="profile icon"
+            />
+            <img
+              class="icon-3"
+              src="./icons/profile-icon.png"
+              alt="profile icon"
+            />
+            <img
+              class="icon-4"
+              src="./icons/profile-icon.png"
+              alt="profile icon"
+            />
+            <img
+              class="icon-5"
+              src="./icons/profile-icon.png"
+              alt="profile icon"
+            />
+          </div>
+          <h4 class="meet-titles">Team</h4>
+        </div>
 
-      <div class="meet-section_video">
-        <img class="meet-section_video--image" src="" alt="" />
-        <h4 class="meet-section_video--student">Students</h4>
-        <p class="meet-section_video--p">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
-          voluptate laudantium vitae omnis totam blanditiis aspernatur sequi
-          quod quam quidem natus alias aliquam eius cum quo, ad deserunt
-          repellendus perspiciatis.
-        </p>
+        <div class="meet-card">
+          <div class="meet-icon_wrapper">
+            <img
+              class="icon-1"
+              src="./icons/profile-icon.png"
+              alt="profile icon"
+            />
+            <img
+              class="icon-2"
+              src="./icons/profile-icon.png"
+              alt="profile icon"
+            />
+            <img
+              class="icon-3"
+              src="./icons/profile-icon.png"
+              alt="profile icon"
+            />
+            <img
+              class="icon-4"
+              src="./icons/profile-icon.png"
+              alt="profile icon"
+            />
+            <img
+              class="icon-5"
+              src="./icons/profile-icon.png"
+              alt="profile icon"
+            />
+          </div>
+          <h4 class="meet-titles">Board</h4>
+        </div>
+
+        <div class="meet-card">
+          <div class="meet-icon_wrapper">
+            <img
+              class="icon-1"
+              src="./icons/profile-icon.png"
+              alt="profile icon"
+            />
+            <img
+              class="icon-2"
+              src="./icons/profile-icon.png"
+              alt="profile icon"
+            />
+            <img
+              class="icon-3"
+              src="./icons/profile-icon.png"
+              alt="profile icon"
+            />
+            <img
+              class="icon-4"
+              src="./icons/profile-icon.png"
+              alt="profile icon"
+            />
+            <img
+              class="icon-5"
+              src="./icons/profile-icon.png"
+              alt="profile icon"
+            />
+          </div>
+          <h4 class="meet-titles">Mentors</h4>
+        </div>
+
+        <div class="meet-card">
+          <div class="meet-icon_wrapper">
+            <img
+              class="icon-1"
+              src="./icons/profile-icon.png"
+              alt="profile icon"
+            />
+            <img
+              class="icon-2"
+              src="./icons/profile-icon.png"
+              alt="profile icon"
+            />
+            <img
+              class="icon-3"
+              src="./icons/profile-icon.png"
+              alt="profile icon"
+            />
+            <img
+              class="icon-4"
+              src="./icons/profile-icon.png"
+              alt="profile icon"
+            />
+            <img
+              class="icon-5"
+              src="./icons/profile-icon.png"
+              alt="profile icon"
+            />
+          </div>
+          <h4 class="meet-titles">Advisors</h4>
+        </div>
+      </div>
+    </section>
+    <section class="student-section">
+      <div class="student-section_video">
+        <div class="student-wrapper">
+          <img
+            class="student-video_image"
+            src="./icons/video.png"
+            alt="video"
+          />
+          <h4 class="student-video_title">Students</h4>
+          <p class="student-video_p">
+            Lorem ipsum dolor sit amet consectetur.
+          </p>
+        </div>
       </div>
     </section>
 
-    <section class="signup-form">
-      <h3>Let's Chat.</h3>
+    <footer class="signup-form">
+      <h3 class="form-title">Let's Chat</h3>
       <p>
-        Kenzie Academy is no small commitment. If we've piqued your interest
+        Kenzie Academy is no small commitment. If we've piqued you interest
         today, we'd love to keep the conversation going.
       </p>
 
@@ -135,6 +267,6 @@
           <input class="submit-container_button" type="submit" />
         </div>
       </form>
-    </section>
+    </footer>
   </body>
 </html>
