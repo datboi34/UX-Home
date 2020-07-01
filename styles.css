@@ -1,5 +1,14 @@
 /*mobile 320px*/
 /* base */
+:root {
+  --bg-color: rgb(80, 79, 79);
+
+  --btn-color-primary: orange;
+
+  --font-color: white;
+  --font-color-secondary: rgb(135, 177, 224);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -9,7 +18,9 @@
 body {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 70px 1fr 1fr 1fr 5% 25% 10%;
+  grid-template-rows: 70px 1fr 10% 1fr 5% 25% 1fr 10%;
+  background-color: var(--bg-color);
+  color: var(--font-color);
 }
 
 li {
@@ -19,6 +30,7 @@ li {
 
 a {
   text-decoration: none;
+  color: var(--font-color-secondary);
 }
 /* layout */
 .header {
@@ -53,7 +65,7 @@ a {
 }
 
 .schedule-button {
-  background-color: rgb(56, 7, 134);
+  background-color: var(--btn-color-primary);
   color: white;
   border-radius: 4px;
   padding: 5px;
@@ -91,6 +103,7 @@ a {
 }
 .quotes-section_icons {
   width: 60%;
+  margin-left: 20px;
 }
 /* program section */
 
@@ -134,9 +147,9 @@ a {
   border-radius: 4px;
   background-color: rgb(58, 58, 238);
   color: white;
-  width: 50%;
+  width: 70%;
   display: grid;
-  margin-left: 75px;
+  margin-left: 40px;
 }
 /* meet section */
 
@@ -256,7 +269,7 @@ a {
 }
 .form-email,
 .form-phone {
-  width: 93%;
+  width: 80%;
   padding: 5px;
 }
 
@@ -275,6 +288,10 @@ a {
 }
 /* desktop styles */
 @media (min-width: 550px) {
+  .design-career_video {
+    width: 20%;
+    height: 200px;
+  }
   .quotes-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -283,7 +300,9 @@ a {
     width: 70%;
     margin-left: 20px;
   }
-
+  .quotes-section_icons {
+    width: 50%;
+  }
   .design-career_video {
     width: 60%;
   }
